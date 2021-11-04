@@ -11,7 +11,7 @@ pipeline {
         stage("Docker") {
             steps {
                 script {
-                    lib.comando()
+                    lib.comando.execute()
                 }
             }
         }
